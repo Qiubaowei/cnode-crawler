@@ -1,0 +1,22 @@
+{
+  "mongoConnParas" : "mongodb://127.0.0.1:27017/cnode",
+  "log4jsConfig" : {
+    "appenders": [
+      {
+        "type": "console"
+      },
+      {
+        "category": [ "doohan","console" ],
+        "type": "dateFile",
+        "filename": "../logs/",
+        "alwaysIncludePattern": true,
+        "pattern": "doohan-yyyyMMdd.log"
+      }
+    ],
+    "replaceConsole": true,
+    "levels":
+    {
+      "console":"ALL"
+    }
+  }
+}
