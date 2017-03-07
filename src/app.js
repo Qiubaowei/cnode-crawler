@@ -15,14 +15,6 @@ dbhd.connectDatabase(mongoConnParas);
 
 articleModel.createArticleModel(dbhd.mongo);
 
-//articleModel.addCar(carInfo.carSN, carInfo);
-//carModel.updateCarInfo(carInfo)
-
-// articleModel.getArticle("itank1", function (err, res) {
-//     console.log(err)
-//     console.log(res)
-// })
-
 var app = express();
 
 var cnodeUrl = 'https://cnodejs.org/';
@@ -69,7 +61,7 @@ app.get('/', function (req, res, next) {
                 console.log(results)
                 res.send(results);
             })
-            
+
 
         });
 });
